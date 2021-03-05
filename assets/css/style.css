@@ -1,7 +1,467 @@
 /*!
-Theme Name: Quickstart Pack
+Theme Name: SusSister Theme
 Theme URI: https://github.com/aminurislamarnob/
 Author: Aminur Islam Arnob
 Author URI: https://github.com/aminurislamarnob/
-Description: Quickstart HTML Pack With Bootstrap 4
 */
+
+/*Theme font-face*/
+@font-face {
+    font-family: 'HiraKakuPro-W3-AlphaNum';
+    src: url('../fonts/HiraKakuPro-W3-AlphaNum.eot');
+    src: url('../fonts/HiraKakuPro-W3-AlphaNum.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HiraKakuPro-W3-AlphaNum.woff2') format('woff2'),
+        url('../fonts/HiraKakuPro-W3-AlphaNum.woff') format('woff'),
+        url('../fonts/HiraKakuPro-W3-AlphaNum.ttf') format('truetype'),
+        url('../fonts/HiraKakuPro-W3-AlphaNum.svg#HiraKakuPro-W3-AlphaNum') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {font-family: "AinslieSans-NorMed";
+    src: url("../fonts/AinslieSans-NorMed.eot");
+    src: url("../fonts/AinslieSans-NorMed.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/AinslieSans-NorMed.woff2") format("woff2"),
+    url("../fonts/AinslieSans-NorMed.woff") format("woff"),
+    url("../fonts/AinslieSans-NorMed.ttf") format("truetype"),
+    url("../fonts/AinslieSans-NorMed.svg") format("svg");
+}
+
+body {
+    font-family: 'HiraKakuPro-W3-AlphaNum', sans-serif;
+    color: #231F20;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-family: 'AinslieSans-NorMed', sans-serif;
+    color: #57575A;
+}
+a:focus,
+.form-control:focus,
+.btn:focus,
+button:focus,
+video:focus, .btn:focus, :focus{
+    outline: 0 solid;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a{color: var(--azna-orange);}
+a:hover {
+    text-decoration: none;
+    color: var(--azna-black);
+}
+
+a, .trans-3, button, input[type=submit] {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.trans-4 {
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.trans-4 {
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.trans-5 {
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+
+.trans-6 {
+    -webkit-transition: all 0.6s ease-in;
+    -o-transition: all 0.6s ease-in;
+    transition: all 0.6s ease-in;
+}
+
+strong, b {
+    font-weight: 500;
+}
+
+::-webkit-input-placeholder {
+    color: #999!important;
+    font-weight: 300;
+}
+
+:-ms-input-placeholder { 
+    color: #999!important;
+    font-weight: 300;
+}
+
+::placeholder, textarea::placeholder {
+    color: #999!important;
+    font-weight: 300;
+}
+.pb-20{
+    padding-bottom: 20px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.pb-30{
+    padding-bottom: 30px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.pb-60{
+    padding-bottom: 60px;
+}
+.mb-60{
+    margin-bottom: 60px;
+}
+.pb-100{
+    padding-bottom: 100px;
+}
+.pt-30{
+    padding-top: 30px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.pt-60{
+    padding-top: 60px;
+}
+.mt-60{
+    margin-top: 60px;
+}
+.pt-100{
+    padding-top: 100px;
+}
+
+
+/*Header Area*/
+header.site-header {
+    background: #231F20;
+    padding: 20px 0;
+}
+
+.main-menu-area ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-menu-area ul li {
+    display: inline-block;
+    position: relative;;
+}
+
+.main-menu-area ul li a {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "AinslieSans-NorMed";
+    font-size: 16px;
+    padding: 13px 27px;
+}
+
+.main-menu-area {
+    text-align: right;
+}
+
+.main-menu-area ul li a:hover, .main-menu-area ul li.active > a {
+    color: #EA8B42;
+}
+ul.sub-menu {
+    position: absolute;
+    z-index: 9;
+    width: 230px;
+    background: #231F20;
+    border: 1px solid #fff;
+    text-align: revert;
+    font-size: 14px;
+    padding-bottom: 17px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+    top: 60px;
+}
+.has-submenu:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    top: 50px;
+}
+ul.sub-menu::before {
+    position: absolute;
+    content: "\f0d8";
+    top: -19px;
+    color: #fff;
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+    z-index: 9999;
+    font-weight: 900;
+    left: 50%;
+    margin-left: -6.25px;
+}
+ul.sub-menu li {
+    display: block;
+}
+
+ul.sub-menu li a {
+    display: block;
+    padding: 13px 29px;
+    line-height: 1;
+}
+.submenu-label{
+    font-size: 8px;
+    text-transform: uppercase;
+    color: #A8A9AD;
+    display: inline-block;
+    padding-right: 30px;
+    line-height: 1;
+    padding-top: 30px;
+}
+/* .main-menu-area > ul > li:last-child a {padding-right: 0px;} */
+
+/*Banner Area*/
+.banner-area {
+    background: #231f20;
+    padding-bottom: 60px;
+    position: relative;
+    min-height: 600px;
+    padding-top: 10px;
+}
+
+.banner-text h1 {
+    font-size: 120px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.275em;
+    line-height: 140px;
+    margin-bottom: 20px;
+}
+.banner-inner-area {
+    z-index: 1;
+}
+
+.banner-area .banner-photo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.banner-text p {
+    color: rgb(234 233 233 / 70%);
+    font-size: 16px;
+    line-height: 26px;
+}
+.banner-text p span {
+    display: block;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+/*Team Area*/
+.smash-bros-area {
+    background: #EAE9E9;
+}
+
+.section-padding {
+    padding: 60px 0;
+}
+
+.section-title h2 {
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: 0.1em;
+}
+
+.section-title p {
+    color: #57575A;
+}
+
+.section-title {
+    margin-bottom: 30px;
+}
+
+.team-member-photo img {
+    width: 100%;
+    min-height: 320px;
+}
+
+.member-name h3 {
+    font-size: 30px;
+    font-family: 'HiraKakuPro-W3-AlphaNum', sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+.member-name h3 a {
+    color: #57575A;
+    text-decoration: none;
+    display: block;
+}
+.member-name h3 a:hover{
+    color: #EA8B42; 
+}
+.member-name{
+    margin-bottom: 15px;
+}
+
+.member-desc {
+    margin-top: 20px;
+}
+
+.member-desc p {
+    color: #57575A;
+}
+
+.team-member {
+    margin-bottom: 40px;
+}
+.member-text img {
+    width: 100%;
+}
+.member-social a {
+    font-size: 24px;
+    display: inline-block;
+    margin-left: 30px;
+    color: #EE1D23;
+}
+
+.member-social a i.fa-twitter {
+    color: #00AEEF;
+}
+.team-more a {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: normal;
+    color: #231F20;
+    text-decoration: none;
+    display: inline-block;
+}
+.team-more a i {margin-left: 20px;}
+
+.team-more a:hover {
+    color: #EA8B42;
+}
+
+/*Footer Area*/
+.site-footer {
+    background: #231F20;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.footer-logo img {
+    max-height: 80px;
+}
+
+.footer-menu-area ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-menu-area ul li {
+    display: inline-block;
+}
+
+.footer-menu-area ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 0 27px;
+    display: inline-block;
+    line-height: 1;
+}
+
+.footer-menu-area {
+    padding: 40px 0;
+    text-align: center;
+    border-top: 2px solid rgb(255 255 255 / 10%);
+    border-bottom: 2px solid rgb(255 255 255 / 10%);
+}
+
+.f-content {
+    color: #A8A9AD;
+    font-size: 8px;
+    text-transform: uppercase;
+    padding-left: 60px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-menu-area ul li a:hover, .footer-menu-area ul li.active a{
+    color: #EA8B42;
+}
+
+.social-links {
+    margin: 50px 0;
+}
+
+.social-links a {
+    font-size: 36px;
+    display: inline-block;
+    margin: 0 18px;
+    line-height: 1;
+}
+
+.social-links a:hover {
+    color: #EA8B42;
+}
+.footer-bottom p {
+    font-size: 16px;
+}
+.footer-dropdown select {
+    width: 139px;
+    height: 18px;
+    border-radius: 4px;
+    padding: 2px 10px;
+    font-size: 10px;
+    padding-right: 16px;
+    margin-bottom: 5px;
+}
+.google-dropdown {
+    display: inline-block;
+}
+
+.google-dropdown img {
+    position: absolute;
+    right: 0;
+    top: -1px;
+}
+.google-dropdown-form {
+    display: inline-block;
+    background: #0B0A0A;
+    padding: 5px;
+}
+.g-powered {
+    color: rgb(255 255 255 / 50%);
+    font-size: 10px;
+}
+
+.g-powered img {
+    margin: 0 5px 0 10px;
+}
