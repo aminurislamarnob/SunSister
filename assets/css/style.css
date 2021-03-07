@@ -180,7 +180,7 @@ header.site-header {
     text-decoration: none;
     font-family: "AinslieSans-NorMed";
     font-size: 16px;
-    padding: 13px 27px;
+    padding: 13px 25px;
 }
 
 .main-menu-area {
@@ -737,7 +737,7 @@ h2.member-vertical {
 
 .members-area {
     background: linear-gradient(#fff 0%, #959595 25.94%, #7b7b7b 50.21%, #959595 73.22%, #fff 100%);
-    padding: 50px 0;
+    margin: 100px 0 50px;
 }
 
 .member-content-text {
@@ -750,10 +750,12 @@ h2.member-vertical {
     margin-bottom: 40px;
 }
 
-.members-content {
+.members-area {
     position: relative;
     overflow: hidden;
     min-height: 730px;
+    max-width: 2560px;
+    margin: 0 auto;
 }
 
 .members-card-slider {
