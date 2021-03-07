@@ -865,3 +865,170 @@ h2.member-vertical {
 .g-powered img {
     margin: 0 5px 0 10px;
 }
+
+
+
+
+
+
+
+
+/*Custom Slider For cards*/
+.members-card-thmub-slider .card-item:nth-child(1) {
+    right: -57px;
+    top: 0;
+    z-index: 1;
+    width: 238px!important;
+    height: 126px!important;
+}
+
+.members-card-thmub-slider .card-item:nth-child(2) {
+    top: 71px;
+    right: 48px;
+    z-index: 2;
+    width: 269px!important;
+    height: 138px!important;
+}
+
+.members-card-thmub-slider .card-item:nth-child(3) {
+    right: 127px;
+    top: 162px;
+    z-index: 3;
+    width: 316px!important;
+    height: 164px!important;
+}
+
+.members-card-thmub-slider .card-item:nth-child(4) {
+    right: 223px;
+    top: 243px;
+    z-index: 4;
+    width: 404px!important;
+    height: 242px!important;
+    opacity: 0;
+}
+
+.members-card-thmub-slider .card-item:nth-child(5) {
+    right: 127px;
+    top: 404px;
+    z-index: 3;
+    width: 316px!important;
+    height: 164px!important;
+}
+
+.members-card-thmub-slider .card-item:nth-child(6) {
+    right: 48px;
+    top: 520px;
+    z-index: 2;
+    width: 269px!important;
+    height: 138px!important;
+}
+
+.members-card-thmub-slider .card-item:nth-child(7) {
+    right: -56px;
+    top: 604px;
+    z-index: 1;
+    width: 238px!important;
+    height: 126px!important;
+}
+
+.members-card-thmub-slider .card-item {
+    position: absolute;
+    cursor: pointer;
+    transition: .3s;
+}
+.members-card-thmub-slider .card-item::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background: #ea8b42;
+    opacity: 0;
+    border-radius: 15px;
+    transition: .3s;
+}
+.members-card-thmub-slider .card-item.active::after, .members-card-thmub-slider .card-item:hover::after {
+    opacity: 0.7;
+}
+
+
+/*custom slider*/
+#cardSlider {
+    max-width: 404px;
+    overflow-y: auto;
+    overflow: hidden;
+    height: auto;
+    position: absolute;
+    top: 243px;
+    right: 223px;
+    z-index: 9;
+}
+  
+  #cardSlider .card-slider-contanier .card-item {
+    position: relative;
+    float: left;
+  }
+  
+  #cardSlider .card-slider-contanier {
+    /* width: 2828px; */
+    height: 242px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  #cardSlider .card-slider-contanier .card-item img {
+    position: relative;
+    width: 404px;
+    height: 242px;
+  }
+  /* ul.card-slider-dots {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+ul.card-slider-dots li {
+    display: inline-block;
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+ul.card-slider-dots li.active {
+    background: #ea8b42;
+} */
+div#cardSliderbuttons button {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    background: rgb(234 139 66 / 50%);
+    border: 0px;
+    line-height: 33px;
+    color: #fff;
+    margin-top: -15px;
+    font-size: 12px;
+    transition: .3s;
+}
+
+div#cardSliderbuttons button#cardNnext {
+    right: 5px;
+    left: auto;
+}
+
+div#cardSliderbuttons button:hover {
+    background: #ea8b42;
+}
