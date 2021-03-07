@@ -737,7 +737,13 @@ h2.member-vertical {
 
 .members-area {
     background: linear-gradient(#fff 0%, #959595 25.94%, #7b7b7b 50.21%, #959595 73.22%, #fff 100%);
-    margin: 100px 0 50px;
+    margin: 100px auto 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 730px;
+    max-width: 2560px;
 }
 
 .member-content-text {
@@ -748,14 +754,6 @@ h2.member-vertical {
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 40px;
-}
-
-.members-area {
-    position: relative;
-    overflow: hidden;
-    min-height: 730px;
-    max-width: 2560px;
-    margin: 0 auto;
 }
 
 .members-card-slider {
