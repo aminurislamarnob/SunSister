@@ -191,26 +191,14 @@ header.site-header {
     color: #EA8B42;
 }
 ul.sub-menu {
-    position: absolute;
-    z-index: 9;
-    width: 230px;
     background: #231F20;
     border: 1px solid #fff;
-    text-align: revert;
+    text-align: right;
     font-size: 14px;
     padding-bottom: 17px;
-    left: 50%;
-    transform: translateX(-50%);
     transition: .3s;
-    opacity: 0;
-    visibility: hidden;
-    top: 60px;
 }
-.has-submenu:hover .sub-menu {
-    opacity: 1;
-    visibility: visible;
-    top: 50px;
-}
+
 ul.sub-menu::before {
     position: absolute;
     content: "\f0d8";
@@ -950,85 +938,4 @@ h2.member-vertical {
 }
 .members-card-thmub-slider .card-item.active::after, .members-card-thmub-slider .card-item:hover::after {
     opacity: 0.7;
-}
-
-
-/*custom slider*/
-#cardSlider {
-    max-width: 404px;
-    overflow-y: auto;
-    overflow: hidden;
-    height: auto;
-    position: absolute;
-    top: 243px;
-    right: 223px;
-    z-index: 9;
-}
-  
-  #cardSlider .card-slider-contanier .card-item {
-    position: relative;
-    float: left;
-  }
-  
-  #cardSlider .card-slider-contanier {
-    /* width: 2828px; */
-    height: 242px;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  #cardSlider .card-slider-contanier .card-item img {
-    position: relative;
-    width: 404px;
-    height: 242px;
-  }
-  /* ul.card-slider-dots {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: absolute;
-    bottom: 10px;
-    right: 0;
-    left: 0;
-    text-align: center;
-}
-
-ul.card-slider-dots li {
-    display: inline-block;
-    font-size: 0;
-    width: 10px;
-    height: 10px;
-    background: #fff;
-    border-radius: 50%;
-    margin: 0 3px;
-    cursor: pointer;
-}
-
-ul.card-slider-dots li.active {
-    background: #ea8b42;
-} */
-div#cardSliderbuttons button {
-    position: absolute;
-    left: 5px;
-    top: 50%;
-    width: 30px;
-    height: 30px;
-    background: rgb(234 139 66 / 50%);
-    border: 0px;
-    line-height: 33px;
-    color: #fff;
-    margin-top: -15px;
-    font-size: 12px;
-    transition: .3s;
-}
-
-div#cardSliderbuttons button#cardNnext {
-    right: 5px;
-    left: auto;
-}
-
-div#cardSliderbuttons button:hover {
-    background: #ea8b42;
 }
