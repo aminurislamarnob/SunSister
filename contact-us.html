@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Members - SunSister Home Page</title>
+    <title>Contact Us - SunSister Home Page</title>
     <!--CSS Styles-->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
-    <link href="assets/css/style.css?v=2.0" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
 </head>
 <body>
@@ -31,7 +31,7 @@
                     <div class="main-menu-area">
                         <ul class="main-menu">
                             <li><a href="index.html">TOPICS</a></li>
-                            <li class="has-submenu active">
+                            <li class="has-submenu">
                                 <a href="members.html">MEMBERS</a>
                                 <ul class="sub-menu">
                                     <span class="submenu-label">CONTENTS</span>
@@ -55,14 +55,14 @@
             </div>
         </div>
     </header>
-    <section class="sunsister-gradient-dark">
+    <section class="sunsister-bg-gray contact-us-page">
         <section class="breadcrumb-links">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-12 col-xxl-11">
                         <a href="#" class="text-uppercase">Home</a>
                         <span>＞</span>
-                        <span class="active-page">Members</span>
+                        <span class="active-page">Contact us</span>
                     </div>
                 </div>
             </div>
@@ -73,97 +73,69 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="section-title text-center">
-                            <h2 class="text-uppercase text-line-height-1">MEMBERS</h2>
-                            <p>「e-Sports」の最前線で活動するプロゲーミングチーム</p>
+                            <h2 class="text-uppercase text-line-height-1">CONTACT</h2>
+                            <p>お問い合わせ</p>
                             <p>●●●●●●●●●●●●●●●●●●●●</p>
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-xl-12 col-xxl-11">
-                        <div class="row">
-                            <div class="col-md-6 col-lg-4">
-                                <div class="member-card">
-                                    <a href="#" class="img-hover-effect d-block"><img src="assets/images/member-card/member-card.jpg" alt="member title here"></a>
-                                    <div class="member-card-text text-center">
-                                        <h3><a href="#" class="text-decoration-none">PUBG</a></h3>
-                                        <p>Playerunknown's BattleGrounds</p>
-                                    </div>
+                    <div class="col-xl-10 col-xxl-10">
+                        <form action="">
+                            <div class="row form-group">
+                                <div class="col-lg-3">
+                                    <label for="cname">法　人　名</label>
+                                </div>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control" name="cname" id="cname">
+                                    <span class="ex">（例）○○株式会社</span>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="member-card">
-                                    <a href="#" class="img-hover-effect d-block"><img src="assets/images/member-card/member-card-2.jpg" alt="member title here"></a>
-                                    <div class="member-card-text text-center">
-                                        <h3><a href="#" class="text-decoration-none">スマブラ</a></h3>
-                                        <p>大乱闘スマッシュブラザーズ</p>
-                                    </div>
+                            <div class="row form-group">
+                                <div class="col-lg-3">
+                                    <label for="name">お　名　前<span class="req">【必須】</span></label>
+                                </div>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control" name="name" id="name" required>
+                                    <span class="ex">（例）鈴木　太郎</span>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="member-card">
-                                    <a href="#" class="img-hover-effect d-block"><img src="assets/images/member-card/member-card-3.jpg" alt="member title here"></a>
-                                    <div class="member-card-text text-center">
-                                        <h3><a href="#" class="text-decoration-none">APEX LEGENDS</a></h3>
-                                        <p>Playerunknown's BattleGrounds</p>
-                                    </div>
+                            <div class="row form-group">
+                                <div class="col-lg-3">
+                                    <label for="namep">お名前(ふりがな)<span class="req">【必須】</span></label>
+                                </div>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control" name="namep" id="namep" required>
+                                    <span class="ex">（例）すずき　たろう</span>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="member-card">
-                                    <a href="#" class="img-hover-effect d-block"><img src="assets/images/member-card/member-card-4.jpg" alt="member title here"></a>
-                                    <div class="member-card-text text-center">
-                                        <h3><a href="#" class="text-decoration-none">PUBG</a></h3>
-                                        <p>Playerunknown's BattleGrounds</p>
-                                    </div>
+                            <div class="row form-group">
+                                <div class="col-lg-3">
+                                    <label for="email">メールアドレス<span class="req">【必須】</span></label>
+                                </div>
+                                <div class="col-lg-9">
+                                    <input type="email" class="form-control" name="email" id="email" required>
+                                    <span class="ex">（例）contact＠sunsister.jp</span>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="member-card">
-                                    <a href="#" class="img-hover-effect d-block"><img src="assets/images/member-card/member-card-5.jpg" alt="member title here"></a>
-                                    <div class="member-card-text text-center">
-                                        <h3><a href="#" class="text-decoration-none">PUBG</a></h3>
-                                        <p>Playerunknown's BattleGrounds</p>
-                                    </div>
+                            <div class="row form-group">
+                                <div class="col-lg-3">
+                                    <label for="inquiry">お問い合わせ内容<span class="req">【必須】</span></label>
+                                </div>
+                                <div class="col-lg-9">
+                                    <textarea name="inquiry" id="inquiry" cols="30" rows="5" class="form-control" required></textarea>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="member-card">
-                                    <a href="#" class="img-hover-effect d-block"><img src="assets/images/member-card/member-card-6.jpg" alt="member title here"></a>
-                                    <div class="member-card-text text-center">
-                                        <h3><a href="#" class="text-decoration-none">PUBG</a></h3>
-                                        <p>Playerunknown's BattleGrounds</p>
-                                    </div>
-                                </div>
+                            <p class="form-hints">送信いただいたお問い合わせは、個人情報保護条例に基づき、適正に管理します。<br> <span>詳しくはこちらをご覧ください。</span></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="1" id="aggree" required>
+                                <label class="form-check-label" for="aggree">お問い合わせ内容はこちらでよろしいでしょうか。</label>
+                                <p>よろしければチェックいただき、送信ボタンをクリックしてください。</p>
                             </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="member-card">
-                                    <a href="#" class="img-hover-effect d-block"><img src="assets/images/member-card/member-card-7.jpg" alt="member title here"></a>
-                                    <div class="member-card-text text-center">
-                                        <h3><a href="#" class="text-decoration-none">PUBG</a></h3>
-                                        <p>Playerunknown's BattleGrounds</p>
-                                    </div>
-                                </div>
+                            <div class="form-button text-center">
+                                <button type="submit" class="submit-btn">送信する</button>
                             </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="member-card">
-                                    <a href="#" class="img-hover-effect d-block"><img src="assets/images/member-card/member-card-8.jpg" alt="member title here"></a>
-                                    <div class="member-card-text text-center">
-                                        <h3><a href="#" class="text-decoration-none">PUBG</a></h3>
-                                        <p>Playerunknown's BattleGrounds</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="member-card">
-                                    <a href="#" class="img-hover-effect d-block"><img src="assets/images/member-card/member-card.jpg" alt="member title here"></a>
-                                    <div class="member-card-text text-center">
-                                        <h3><a href="#" class="text-decoration-none">PUBG</a></h3>
-                                        <p>Playerunknown's BattleGrounds</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>

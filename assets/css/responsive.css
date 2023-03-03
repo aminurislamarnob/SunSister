@@ -1,9 +1,11 @@
-@media only screen and (max-width: 1700px) {
+@media only screen and (min-width: 1800px) {
 
 }
 
 @media only screen and (max-width: 1700px) and (min-width: 1024px)  {
-
+    .banner-logos img {
+        max-width: 350px;
+    }
 }
 
 @media only screen and (max-width: 1365px) { 
@@ -15,6 +17,10 @@
 }
 
 @media only screen and (min-width: 991px) {
+
+    .flex-column-max{
+        flex-direction: row!important;
+    }
     /*Sub Menu*/
     ul.sub-menu {
         position: absolute;
@@ -35,12 +41,12 @@
     /*custom slider*/
     #cardSlider {
         max-width: 404px;
-        overflow-y: auto;
-        overflow: hidden;
+        /*overflow-y: auto;*/
+        overflow: visible;
         height: auto;
-        position: absolute;
-        top: 243px;
-        right: 223px;
+        position: relative;
+        top: 0px;
+        right: 0px;
         z-index: 9;
     }
     
@@ -109,7 +115,11 @@
 
 
 @media only screen and (max-width: 991px) {
-    .banner-area .banner-photo::after {
+
+    .flex-column-max{
+        flex-direction: column!important;
+    }
+    /* .banner-area .banner-photo::after {
         position: absolute;
         left: 0;
         right: 0;
@@ -120,12 +130,22 @@
         background: #231f20;
         content: "";
         opacity: 0.7;
+    } */
+    .banner-area .banner-photo {
+        position: relative;
+        margin-bottom: -35px;
     }
     
     .banner-text {
         padding-left: 20px;
     }
+    .footer-top, .footer-middle {
+        display: none;
+    }
     
+    .site-footer .social-links {
+        margin-top: 0;
+    }
     .footer-menu-area ul li {
         line-height: 2;
     }
@@ -196,11 +216,12 @@
     }
     header .mobile-menu-trigger {
         width: 30px;
-        margin-right: 0;
-        margin-left: auto;
+        margin-right: auto;
+        margin-left: 0;
         height: 30px;
-        top: 5px;
+        top: 15px;
         position: relative;
+        float: left;
     }
     header .mobile-menu-trigger span {
         display: inline-block;
@@ -298,7 +319,37 @@
     span.sub-menu-trigger.active {
         transform: rotate(90deg);
     }
+
+    /*Recuiret Details*/
+    .recruit-details-text {
+        padding-left: 30px;
+    }
     
+    .recruit-more-text img.float-end {
+        float: none!important;
+        margin-left: 0px;
+        width: 100%;
+    }
+    
+    .recruit-details-text {
+        padding-left: 0;
+        margin-top: 29px;
+    }
+    
+    span.recruit-date {
+        float: none;
+        display: block;
+        text-align: right;
+        margin-bottom: 20px;
+    }
+    
+    .recruit-details img {
+        width: 100%;
+    }
+    .recruit-details h1{
+        padding-right: 0;
+    }
+
 }
 
 
@@ -328,26 +379,65 @@
         word-break: break-word;
         line-height: 1;
     }
-    .topics-container {
+
+    /*Topic Area*/
+    /* .topics-container {
         border: none;
         padding: 60px 0;
         margin-top: 0;
-    }
+    } */
     
-    .topics-area {
+    /* .topics-area {
         background: #595657;
-    }
+    } */
     
     
-    .topics-container::before, .topics-container::after {
+    /* .topics-container::before, .topics-container::after {
         display: none;
+    } */
+    .topics-container::before{
+        right: -11px;
+        top: -11px;
     }
-    
+    .topics-container::after{
+        bottom: -11px;
+        left: -11px;
+    }
     .topics-area .section-title h2 {
         font-size: 40px;
         line-height: 1;
     }
+
+    .topic-box-date {
+        margin-right: 0px;
+    }
     
+    .topic-box-date span {
+        display: inline-block!important;
+    }
+    
+    .topic-box-date .tyear {
+        margin-left: 20px;
+    }
+    
+    .topic-box-desc {
+        width: 100%;
+    }
+    
+    .topic-box h4 {
+        padding-left: 0;
+    }
+    
+    .topic-box {
+        padding: 0 20px;
+    }
+    .topics-container {
+        padding: 30px 10px;
+    }
+
+
+
+    /*Live Section*/
     .live-area .section-title {
         display: block!important;
     }
@@ -360,17 +450,23 @@
     .live-area .section-title h2 {
         margin-bottom: 20px;
     }
+    .live-video-box.topic-box h4{
+        padding-left: 0px;
+    }
+    .live-video-box.topic-box {
+        padding: 0px;
+    }
     
     .section-title h2 {
         line-height: 1;
     }
     
     .colb-slider-item {
-        margin: 0;
+        margin: 0 8px 8px 0;
     }
-    .topic-box-desc {
+    /* .topic-box-desc {
         width: calc(100% - 85px);
-    }
+    } */
     .member-area-content {
         display: block!important;
     }
@@ -380,5 +476,201 @@
         font-size: 40px;
         margin-top: 20px;
         margin-right: 0;
+    }
+
+    /*Member Page*/
+    section.breadcrumb-links {
+        display: none;
+    }
+    
+    .member-group-area.section-padding {
+        padding-top: 80px;
+    }
+    
+    .section-title p {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    
+    .member-card {
+        margin-bottom: 40px;
+    }
+    .breadcrumb-bg h1 {
+        font-size: 25px;
+    }
+    .team-member.member-group-box{
+        margin-bottom: 50px;
+    }
+
+    /*Partner*/
+    .row.sunsister-custom-pd {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    
+    .row.sunsister-custom-pd>* {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .partner-social a:last-child {
+        margin-right: 0;
+    }
+    
+    .partner-group-box, .live-page .live-video-box.topic-box, .topics-page .topic-box {
+        margin-bottom: 40px;
+    }
+
+    /*Live Page*/
+    .live-page .topic-box-desc{
+        width: 100%;
+    }
+
+    /*Topics Page*/
+    .topics-page .topic-box-desc{
+        width: 100%;
+    }
+    .topics-page .topic-photo .topic-label {
+        right: 0;
+    }
+    .topics-page .topic-box{
+        padding: 0px;
+    }
+    .pick-sidebar .pick-up-container {
+        display: none;
+        margin-top: 40px;
+    }
+    
+    .pick-sidebar .sidebar-title p {
+        font-size: 14px;
+    }
+    
+    .pick-sidebar .sidebar-title {
+        margin-bottom: 0;
+    }
+    .mobile-view-tabs > ul > li {
+        text-align: center;
+    }
+    
+    .mobile-view-tabs > ul > li button {
+        background: no-repeat;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+    }
+    .mobile-view-tabs > ul > li button.active {
+        color: #ea8b42;
+    }
+    .article-details {
+        padding: 0;
+    }
+    
+    .article-top-img img {
+        width: 100%;
+    }
+    
+    .article-meta {
+        margin-bottom: 25px;
+    }
+    
+    .article-top-desc {
+        padding-left: 0;
+    }
+    
+    .article-item.d-flex {
+        display: block!important;
+        padding: 0 10px;
+    }
+    
+    .article-sld-img {
+        width: 100%;
+    }
+    
+    .article-sld-text {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 15px;
+    }
+    
+    .article-slider::after {
+        display: none;
+    }
+    .article-description img.float-start{
+        margin-right: 0px;
+        width: 100%;
+    }
+    .article-description img.float-end{
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    /*Schedule Page*/
+    a.schedule-box-img {
+        width: 100%;
+        display: block;
+    }
+    
+    a.schedule-box-img img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .schedule-text {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+    .schedule-box {
+        margin-bottom: 40px;
+    }
+
+    /*About Us Page*/
+    .about-us-page .section-title {
+        margin-bottom: 80px;
+    }
+    
+    .about-us-img img {
+        width: 100%;
+    }
+    
+    .about-us-img {
+        margin-bottom: 80px;
+        padding: 0 20px;
+    }
+    
+    .about-us-desc {
+        padding: 0;
+    }
+    
+    .about-us-desc p {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    /*Contact Us*/
+    .submit-btn {
+        font-size: 18px;
+        max-width: 180px;
+        height: 44px;
+        line-height: 48px;
+    }
+
+    /*Recruit Details*/
+    .form-title {
+        font-size: 25px;
+    }
+    
+    .recruit-details {
+        margin-bottom: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+
+/*Very Small Mobile Device*/
+@media only screen and (max-width: 350px) { 
+    .mobile-view-tabs > ul > li button{
+        font-size: 14px;
     }
 }
